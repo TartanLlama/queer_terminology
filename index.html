@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Do I Get a Say in Queer Terminology?</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <style>
+  body {    
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+  }
+  html {
+    height: 100%;
+  }
+  #content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100%;
+  }
+  #question {
+      font-size: large;
+  }
+  button {
+    background: #8d259b;
+    border: none;
+    font-size: large;
+    color: white;
+    padding: 5px;
+    width: 40%;
+  }
+  #left {
+      float: left;
+  }
+  #right {
+      float: right;
+  }
+  </style>
+  <script>
+      function yes() {
+          document.getElementById('query').innerHTML = "<h2>Yes!</h2>";
+      }
+      function no() {
+          document.getElementById('query').innerHTML = "<h2>No!</h2>";
+      }
+  </script>
+</head>
+
+<body>
+  <div id="content">
+    <h1>"Do I Get a Say in Queer Terminology?"</h1>  
+    <div id="query">
+        <p id="question">Are you queer?</p>
+        <div><button id="left" onclick="yes()">Yes</button><button id="right" onclick="no()">No</button></div>
+    </div>
+  </div>
+</body>
+</html>
